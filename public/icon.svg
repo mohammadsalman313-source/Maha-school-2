@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#042f2e" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle (Safe zone friendly) -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)" />
+  
+  <!-- Outer glowing ring -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#2dd4bf" stroke-width="4" stroke-opacity="0.3" />
+
+  <!-- Center Group -->
+  <g filter="url(#shadow)" transform="translate(0, -10)">
+    <!-- Open Book (School Education) -->
+    <path d="M256 310 C210 270 140 270 110 280 L110 370 C140 360 210 360 256 395 C302 360 372 360 402 370 L402 280 C372 270 302 270 256 310 Z" fill="#ffffff" fill-opacity="0.95" />
+    <path d="M256 310 L256 395" stroke="#0f766e" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Poshan Aahar / Grain / Nutrition Bowl with Steam & Leaf -->
+    <!-- Bowl -->
+    <path d="M166 230 C166 280 346 280 346 230 Z" fill="url(#goldGrad)" />
+    <!-- Grain Sprouts / Wheat Ear / Leaf -->
+    <path d="M256 120 C230 150 240 190 256 215 C272 190 282 150 256 120 Z" fill="#34d399" />
+    <path d="M256 160 C220 160 200 185 220 205 C240 205 250 185 256 160 Z" fill="#10b981" />
+    <path d="M256 160 C292 160 312 185 292 205 C272 205 262 185 256 160 Z" fill="#10b981" />
+  </g>
+
+  <!-- Bottom Badge: MH SCHOOL & MDM -->
+  <rect x="136" y="420" width="240" height="42" rx="21" fill="#f59e0b" />
+  <text x="256" y="447" fill="#1e293b" font-family="system-ui, -apple-system, sans-serif" font-size="19" font-weight="800" text-anchor="middle" letter-spacing="1">MH POSHAN &amp; ATTENDANCE</text>
+</svg>

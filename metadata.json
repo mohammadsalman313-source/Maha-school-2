@@ -1,0 +1,6 @@
+{
+  "name": "MahaSchool Attendance & Poshan Aahar",
+  "description": "Maharashtra school daily attendance, state-norm Poshan Aahar (MDM) calculator, and parent absentee & circular notices system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
